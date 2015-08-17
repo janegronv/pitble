@@ -3,6 +3,7 @@ from pitble.pitapp.models import Pitble
 
 # Register your models here.
 class PitbleAdmin(admin.ModelAdmin):
-     pass
+     list_display = ('text','owner')
+     search_fields = ('text',)
 
 admin.site.register(Pitble, PitbleAdmin)
