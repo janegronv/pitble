@@ -1,9 +1,7 @@
 """
 Django settings for pitble project.
-
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
-
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
@@ -17,7 +15,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '@holepm2zq4&1fk32u(t=mu7egslqu%t)o4)r!=zybofj6*fpb'
+SECRET_KEY = '+acjm@&**sfhc8v#a$la-alb9i!xu&e%uso%p=&l)1^q@@m%b!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +35,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pitble.pitapp',
+    'bootstrap3'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -66,9 +65,9 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-ES'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Madrid'
 
 USE_I18N = True
 
@@ -81,4 +80,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
 AUTH_USER_MODEL = 'pitapp.User'
